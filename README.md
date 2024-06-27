@@ -23,7 +23,7 @@ This repository aims to perform SLAM on the AWS hospital world using turtlebot3
    ```
 
 3. **Install the dependencies:-**
-   Refer to the quick-start of TurtleBot3 Emanuel [Here](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
+   Refer to the quick-start of TurtleBot3 Emanuel [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/), 
    along with gazebo installation tutorial [Here](https://classic.gazebosim.org/tutorials?cat=guided_b&tut=guided_b1).
 
 4. **Build the workspace**
@@ -86,7 +86,7 @@ Dataset-of-Gazebo-Worlds-Models-and-Maps/worlds/hospital
 ```
 turtlebot3/turtlebot3_navigation/maps
 ```
-3. hoslpital.launch
+3. hospital_world.launch
 ```
 turtlebot3_simulations/turtlebot3_gazebo/launch
 ```
