@@ -1,0 +1,13 @@
+<launch>
+  <arg name="world_file" default="/mnt/e/wslUbuntu/ros/P1/src/Dataset-of-Gazebo-Worlds-Models-and-Maps/worlds/hospital/hospital.world"/>
+
+  <!-- Generate URDF from xacro -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_file)"/>
+  </include>
+
+  <node name="spawn_turtlebot3" pkg="gazebo_ros" type="spawn_model" output="screen"
+        args="-urdf -model turtlebot3 -param robot_description -x 0 -y 0 -z 0.1"/>
+</launch>
