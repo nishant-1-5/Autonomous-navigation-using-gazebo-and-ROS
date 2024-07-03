@@ -1,5 +1,5 @@
 <launch>
-  <arg name="world_file" default="/mnt/e/wslUbuntu/ros/P1/src/Dataset-of-Gazebo-Worlds-Models-and-Maps/worlds/hospital/hospital.world"/>
+  <arg name="world_file" default="../../../Dataset-of-Gazebo-Worlds-Models-and-Maps/worlds/hospital/hospital.world"/>
 
   <!-- Generate URDF from xacro -->
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro"/>
